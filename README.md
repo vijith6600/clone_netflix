@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+Project Title: Netflix Clone with React and Axios
+Project Overview:
+In this project, you will be building a simplified version of the Netflix user interface using React for the frontend and Axios for making API requests to fetch movie or TV show data from a public API (such as The Movie Database API).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Key Features:
+Homepage:
 
-## Available Scripts
+Display a grid of popular movies or TV shows on the homepage.
+Each item in the grid should include a thumbnail, title, and a brief description.
+Navigation:
 
-In the project directory, you can run:
+Implement a navigation bar with sections like Home, TV Shows, Movies, and My List.
+Allow users to navigate between these sections.
+Movie/TV Show Details:
 
-### `npm start`
+When a user clicks on a movie or TV show, display detailed information about it.
+Show additional details such as release date, genres, and a longer description.
+Search Functionality:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Implement a search bar that allows users to search for movies or TV shows.
+Display search results dynamically as the user types.
+User Authentication (Optional):
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Implement user authentication to allow users to create accounts and log in.
+Personalize the experience by creating a "My List" feature where users can add/remove movies or TV shows.
+Responsive Design:
 
-### `npm test`
+Ensure that the application is responsive and works well on various screen sizes, including mobile devices.
+Tech Stack:
+Frontend:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React (functional components, hooks)
+Axios for making API requests
+React Router for navigation
+CSS (or a preprocessor like SCSS) for styling
+API:
 
-### `npm run build`
+Utilize a public movie/TV show API like The Movie Database (TMDb) API.
+Development Steps:
+Set Up the Project:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Use Create React App or set up your React project manually.
+Install necessary dependencies like Axios.
+Design the UI:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create the basic layout for the homepage, navigation bar, and movie/TV show details.
+Fetch Data:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Use Axios to fetch data from the chosen API.
+Handle API responses and update the state accordingly.
+Implement Navigation:
 
-### `npm run eject`
+Set up React Router for navigation between different sections.
+Search Functionality:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Implement search functionality using the API.
+User Authentication (Optional):
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Implement user authentication if desired.
+Responsive Design:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ensure the application is visually appealing and functional on various devices.
+Learning Goals:
+Gain hands-on experience with React components, state, and hooks.
+Learn how to make asynchronous API requests using Axios.
+Practice routing in a React application.
+Understand the basics of responsive web design.
+Resources:
+React Documentation
+Axios Documentation
+The Movie Database API
+Feel free to customize the project based on your preferences and expand its features as you become more comfortable with React and web development.
