@@ -1,3 +1,9 @@
+git hub page link : https://vijith6600.github.io/clone_netflix/
+
+netlify link : https://clone-netflix-2024.netlify.app/
+
+
+
 Project Title: Netflix Clone with React and Axios
 Project Overview:
 In this project, you will be building a simplified version of the Netflix user interface using React for the frontend and Axios for making API requests to fetch movie or TV show data from a public API (such as The Movie Database API).
