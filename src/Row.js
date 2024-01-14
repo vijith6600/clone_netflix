@@ -1,9 +1,10 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import instance from './instance';
+import './Row.css'
 
 
-function Row({title,fetchurl}) {
+function Row({title,fetchurl,isLargeRow}) {
     
 const [movie, setmovie]= useState([])
 
@@ -19,14 +20,14 @@ useEffect(()=>{
 console.log(movie);
 
   return (
-    <div>
+    <div className='row'>
       <h1>{title}</h1>
-      <div>
+      <div className='row__posters'>
         {movie.map((item)=>(
           <img
           key={item.id}
-          className='row__poster'
-          src={`${baseUrl}${item.poster_path}`}
+          className={`row__poster ${isLargeRow && "row__posterLarge"} `}
+          src={`${baseUrl}${isLargeRow? item.poster_path:item.backdrop_path}`}
           alt={item.name}
           />
         ))}
