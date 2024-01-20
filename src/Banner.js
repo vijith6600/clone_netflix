@@ -22,8 +22,8 @@ function Banner() {
     featchData();
   }, []);
 
-  const function truncate(string,limit){
-return string?.length>n?string(0,limit)  }
+  function truncate(string,limit){
+return string?.length>limit?string.substr(0,limit-1)+"...":string }
 
   console.log("banner component is", movie);
 
@@ -39,7 +39,7 @@ return string?.length>n?string(0,limit)  }
 
 <div className="bannerContent">
   <h1 className="bannerTitle">{movie?.title || movie?.name||movie?.original_name}</h1>
-  <h1 className="bannerDiscription">{movie.overview}</h1>
+  <h1 className="bannerDiscription">{truncate(movie?.overview,150)}</h1>
 </div>
 
     
